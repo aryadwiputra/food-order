@@ -21,7 +21,7 @@ return new class extends Migration
             $t->string('reason', 150)->nullable();
             $t->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $t->timestamps();
-            $t->index(['tenant_id', 'outlet_id', 'ingredient_id', 'created_at']);
+            $t->index(['tenant_id', 'outlet_id', 'ingredient_id']);
         });
     }
 

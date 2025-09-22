@@ -22,7 +22,7 @@ return new class extends Migration
             $t->decimal('qty_after', 14, 3);
             $t->dateTime('occurred_at');
             $t->timestamps();
-            $t->index(['tenant_id', 'outlet_id', 'ingredient_id', 'occurred_at']);
+            $t->index(['tenant_id', 'outlet_id', 'ingredient_id']);
         });
     }
 
